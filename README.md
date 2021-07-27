@@ -44,6 +44,9 @@ Run all the tests with this command:
 python -m unittest discover ./
 ```
 
+# See Also
+Detect Potential Drug Drug Interactions: https://github.com/scossin/pddiansm
+
 # Citation 
 ```
 @mastersthesis{cossin:dumas-01442668,
