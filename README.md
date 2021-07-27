@@ -45,4 +45,18 @@ python -m unittest discover ./
 ```
 
 # Citation 
+```
+@mastersthesis{cossin:dumas-01442668,
+  TITLE = {{Interactions m{\'e}dicamenteuses : donn{\'e}es li{\'e}es et applications}},
+  AUTHOR = {Cossin, S{\'e}bastien},
+  URL = {https://dumas.ccsd.cnrs.fr/dumas-01442668},
+  PAGES = {80},
+  YEAR = {2016},
+  MONTH = Nov,
+  KEYWORDS = {Interaction m{\'e}dicamenteuse ;  Web S{\'e}mantique ;  Interop{\'e}rabilit{\'e} ;  Pharmacovigilance },
+  PDF = {https://dumas.ccsd.cnrs.fr/dumas-01442668/file/Med_spe_2016_Cossin.pdf},
+  HAL_ID = {dumas-01442668},
+  HAL_VERSION = {v1},
+}
+```
 [Cossin S. Interactions médicamenteuses : données liées et applications. 30 nov 2016.](https://dumas.ccsd.cnrs.fr/dumas-01442668)
