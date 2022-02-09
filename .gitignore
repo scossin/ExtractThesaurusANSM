@@ -1,0 +1,19 @@
+# personal preferences
+data/
+/venv/
+.env
+
+# in case of spyder/jupyter-notebook project
+__pycache__/
+.spyproject/
+.ipynb_checkpoints/
+
+# in case of python project
+dist/
+build/
+lib/
+*.egg-info/
+
+# specific to this project
+*.jar
+thesauri/
