@@ -35,7 +35,8 @@ class SubstanceClass:
         #  'pression artérielle']
         if len(normalized_tokens) != 0:
             families_string = " ".join(normalized_tokens)
-            self.drug_classes = families_string.split(" - ")
+            families_string_norm = self._normalize_families_string(families_string)
+            self.drug_classes = families_string_norm.split(" - ")
         return None
 
     @staticmethod
@@ -45,6 +46,10 @@ class SubstanceClass:
             .replace("Interactions en propre seulement", "") \
             .replace("Voir :", "") \
             .strip()
+
+    @staticmethod
+    def _normalize_families_string(families_string: str) -> str:
+        return families_string.replace("cardio- sélectifs", "cardio-sélectifs")
 
     @staticmethod
     def _is_not_empty_string(string):
