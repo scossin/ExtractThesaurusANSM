@@ -107,7 +107,7 @@ fi
 thesaurus_txt_2_json () {
     txt_file=$1
     output_file=$2
-    commande="python extractInteraction.py  -f $txt_file -o $output_file"
+    commande="python3 extractInteraction.py  -f $txt_file -o $output_file"
     echo $commande
     eval $commande
 }
@@ -115,7 +115,7 @@ thesaurus_txt_2_json () {
 substances_txt_2_json () {
     txt_file=$1
     output_file=$2
-    commande="python extractSubstanceDrugClasses.py  -f $txt_file -o $output_file"
+    commande="python3 extractSubstanceDrugClasses.py  -f $txt_file -o $output_file"
     echo $commande
     eval $commande
 }
