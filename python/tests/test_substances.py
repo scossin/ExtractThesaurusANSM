@@ -70,6 +70,17 @@ class TestsSubstance(unittest.TestCase):
         alt_drugs_classes.add_alternative_class_labels(substance_object)
         self.assertEqual(substance_object.dict(), output_expected)
 
+    def test_norm_family_string(self):
+        text = """trihexyphenidyle\nVoir : antiparkinsoniens
+        anticholinergiques - médicaments
+        atropiniques - bêta-bloquants non cardio-\n
+        sélectifs (y compris collyres)
+        """
+        substance = SubstanceClass(text)
+        self.assertEqual(substance.substance, "trihexyphenidyle")
+        self.assertEqual(len(substance.drug_classes), 3)
+        self.assertEqual(substance.drug_classes[2], "bêta-bloquants non cardio-sélectifs (y compris collyres)")
+
 
 if __name__ == "__main__":
     unittest.main()
